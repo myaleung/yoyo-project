@@ -12,4 +12,4 @@ Yoyo developer test. Website created with Panini, Gulp, Tailwind, Sass and Webpa
 
 ### Live page available
 
-[Little Loft Website](https://myaleung.github.io/yoyo-test/dist/)
+[Little Loft Website](https://myaleung.github.io/yoyo-project/dist/)
