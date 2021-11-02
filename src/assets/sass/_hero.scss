@@ -1,0 +1,25 @@
+.hero {
+    .hero__background {
+        top: -100vh;
+        left: -100vw;
+        bottom: 0;
+        width: 300vw;
+        z-index: -1;
+        height: calc(100vh + 100% + theme('spacing.80'));
+        @screen sm {
+            height: calc(100vh + 100% + theme('spacing.96'));
+        }
+        @screen md {
+            height: calc(100vh + 100% + theme('spacing.20'));
+        }
+        @screen lg {
+            height: calc(100vh + 100% + theme('spacing.20'));
+        }
+        @screen xl {
+            height: calc(100vh + 100% + theme('spacing.32'));
+        }
+        @screen 2xl {
+            height: calc(100vh + 100% + theme('spacing.52'));
+        }
+    }
+}
