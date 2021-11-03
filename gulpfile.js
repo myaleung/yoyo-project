@@ -76,6 +76,7 @@ function cleanCss() {
 	return del(['./dist/css/**', '!./dist/css'], { force: true });
 }
 
+// Compile js and css
 function compileJsCss() {
   return gulp.src('./src/assets/js/main.js')
     .pipe(named())
@@ -92,20 +93,24 @@ function compileJsCss() {
 [ START ASSETS TASKS ]
 */
 
+// Clean images folder
 function cleanImages() {
   return del(['./dist/img/*.{png,jpg,gif,ico}', '!./dist/img'], { force: true });
 }
 
+// Move images to dist
 function moveImages() {
   return gulp.src('./src/assets/img/*')
     .pipe(gulp.dest('./dist/img'))
     .pipe(browsersync.stream());
 }
 
+// Clean img and svg folder
 function cleanSprite() {
   return del(['./dist/img/*.svg', '!./dist/img'], { force: true });
 }
 
+// Create sprite sheet
 function createSprite() {
   return gulp.src('./src/assets/svg/*')
     .pipe(svgstore())
