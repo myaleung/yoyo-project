@@ -1,6 +1,6 @@
 module.exports = {
   purge: {
-    enabled: false,
+    enabled: true,
     content: ['./src/html/**/*.html'],
   },
   darkMode: false, // or 'media' or 'class'
@@ -36,11 +36,13 @@ module.exports = {
       spacing: {
         'fb': '1.125rem',
         '500': '31.25rem'
-      }
+      },
     },
   },
   variants: {
-    extend: {},
+    extend: {
+      outline: ['focus-visible'],
+    },
   },
   plugins: [
     require('tailwindcss'),

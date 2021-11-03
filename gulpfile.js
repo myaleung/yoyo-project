@@ -46,8 +46,7 @@ function compileHtml() {
     .pipe(panini({
       root: "./src/html/pages",
       layouts: "./src/html/layouts",
-      partials: "./src/html/partials",
-      helpers: "./src/html/helpers"
+      partials: "./src/html/partials"
     }))
     .pipe(gulp.dest("./dist"))
     .pipe(browsersync.stream());
